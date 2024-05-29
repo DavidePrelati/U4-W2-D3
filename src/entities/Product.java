@@ -43,4 +43,14 @@ public class Product {
     private Long randomId() {
         return new Random().nextLong();
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }

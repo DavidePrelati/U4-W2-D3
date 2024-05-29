@@ -33,4 +33,13 @@ public class Customer {
     private Long randomId() {
         return new Random().nextLong();
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", tier=" + tier +
+                '}';
+    }
 }
